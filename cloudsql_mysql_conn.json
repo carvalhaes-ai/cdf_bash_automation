@@ -1,0 +1,23 @@
+{
+    "name": "${name}",
+    "description": "Configuration for connecting to a CloudSQL MySQL database",
+    "category": "Database",
+    "plugin": {
+        "category": "Database",
+        "name": "CloudSQLMySQL",
+        "type": "connector",
+        "properties": {
+            "instanceType": "public",
+            "jdbcPluginName": "cloudsql-mysql",
+            "database": "${database}",
+            "connectionName": "${jdbc_plugin_name}",
+            "user": "${user}",
+            "password": "${password}"
+        },
+        "artifact": {
+            "scope": "SYSTEM",
+            "name": "cloudsql-mysql-plugin",
+            "version": "1.10.2"
+        }
+    }
+}

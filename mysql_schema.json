@@ -1,0 +1,38 @@
+{
+  "type": "record",
+  "name": "outputSchema",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    },
+    {
+      "name": "hire_date",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-micros"
+      }
+    },
+    {
+      "name": "employee_name",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "department",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "years_of_experience",
+      "type": [
+        "int",
+        "null"
+      ]
+    }
+  ]
+}
